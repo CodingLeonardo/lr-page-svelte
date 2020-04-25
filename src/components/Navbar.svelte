@@ -56,7 +56,7 @@
     /* background: #a5ff9b; */
   }
   .About-perfile {
-    width: 10%;
+    width: 50%;
   }
   .About-perfile img {
     width: 100%;
@@ -80,7 +80,6 @@
 </style>
 
 <header>
-<<<<<<< HEAD
 
   <div>
     <div class="About">
@@ -108,19 +107,4 @@
     </ul>
   </nav>
 
-=======
-  <div>
-    <h1>Leonardo Rivero</h1>
-  </div>
-  <nav>
-    <ul>
-      <li>
-        <a href="/proyectos">Proyectos</a>
-      </li>
-      <li>
-        <a href="/blog">Blog</a>
-      </li>
-    </ul>
-  </nav>
->>>>>>> 49986bd46c08cf36478055f3124674f05214c163
 </header>

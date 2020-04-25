@@ -1,10 +1,6 @@
 {
   "name": "lr-page-svelte",
-<<<<<<< HEAD
   "description": "Es una pagina web de portafolio de @CodingLeonardo. hecha en Svelte y Sapper",
-=======
-  "description": "Es una pagina de portafolio de @CodingLeonardo. Hecho con Svelte",
->>>>>>> 49986bd46c08cf36478055f3124674f05214c163
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

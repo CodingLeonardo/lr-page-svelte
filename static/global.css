@@ -1,39 +1,29 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro:wght@300;400;700&display=swap");
 
-=======
->>>>>>> 49986bd46c08cf36478055f3124674f05214c163
 :root {
   --primary-100: #2ee11b;
   --primary-200: #15db00;
   --primary-300: #11ae00;
   --primary-400: #0d8c00;
   --primary-500: #0a6600;
-<<<<<<< HEAD
   --primary-600: #095800;
   --primary-700: #074600;
   --primary-800: #063b01;
   --primary-900: #052c00;
-=======
->>>>>>> 49986bd46c08cf36478055f3124674f05214c163
   --secondary-100: #ff801f;
   --secondary-200: #ff6f00;
   --secondary-300: #d55c00;
   --secondary-400: #aa4a00;
   --secondary-500: #7d3600;
-<<<<<<< HEAD
   --secondary-600: #6d2f00;
   --secondary-700: #5c2800;
   --secondary-800: #522300;
   --secondary-900: #461e00;
-=======
->>>>>>> 49986bd46c08cf36478055f3124674f05214c163
   --tertity-100: #dc1b90;
   --tertity-200: #d50081;
   --tertity-300: #a70066;
   --tertity-400: #860051;
   --tertity-500: #62003b;
-<<<<<<< HEAD
   --tertity-600: #4d002e;
   --tertity-700: #3b0025;
   --tertity-800: #2c001c;
@@ -49,17 +39,6 @@
 body {
   font-family: "Source Sans Pro";
   background: #fafafa;
-=======
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #333;
->>>>>>> 49986bd46c08cf36478055f3124674f05214c163
 }
 
 h1,
@@ -68,21 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-<<<<<<< HEAD
   font-family: "Fjalla One";
-=======
-  margin: 0 0 0.5em 0;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-a {
-  color: inherit;
->>>>>>> 49986bd46c08cf36478055f3124674f05214c163
 }
 
 code {

@@ -1,12 +1,20 @@
 <script>
+  import Socialbar from "./Socialbar.svelte";
   export let segment;
 </script>
 
 <style>
+  header {
+    /* background: #a5ff9b; */
+    padding-top: 0.5em;
+  }
+  header > div {
+    text-align: center;
+  }
   nav {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--primary-100);
+    border-bottom: 0.2em solid var(--primary-500);
     font-weight: normal;
   }
 
@@ -26,53 +34,77 @@
     display: block;
     float: left;
   }
-
-  [aria-current] {
-    position: relative;
-    display: inline-block;
-  }
-
-  [aria-current]::after {
-    position: absolute;
-    content: "";
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: rgb(255, 62, 0);
-    display: block;
-    bottom: -1px;
-  }
-
   a {
     text-decoration: none;
-    color: rgb(77, 77, 77);
+    color: #56a34d;
     padding: 1em 0.5em;
     display: block;
     transition: 0.8s;
     will-change: color;
   }
-
   a:hover {
+    color: #20421d;
+  }
+
+  .About {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     color: black;
+    padding: 1em 2em;
+    /* background: #a5ff9b; */
+  }
+  .About-perfile {
+    width: 10%;
+  }
+  .About-perfile img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 1em black;
+  }
+  .About-info {
+    margin-top: 0.5em;
+  }
+  .About a {
+    padding: 0;
+    color: #20421d;
+  }
+  .About-info h1 {
+    font-weight: lighter;
+  }
+  .About-info span {
+    font-weight: lighter;
+    font-size: 1.1em;
   }
 </style>
 
-<div />
+<header>
 
-<nav>
-  <ul>
-    <li>
-      <a
-        aria-current={segment === 'certificados' ? 'page' : undefined}
-        href="/certificados">
-        Certificados
-      </a>
-    </li>
-    <li>
-      <a
-        aria-current={segment === 'habilidades' ? 'page' : undefined}
-        href="/habilidades">
-        Habilidades
-      </a>
-    </li>
-  </ul>
-</nav>
+  <div>
+    <div class="About">
+      <figure class="About-perfile">
+        <a href="/">
+          <img src="./assets/images/Leonardito.jpg" alt="Leonardo Rivero" />
+
+        </a>
+      </figure>
+      <div class="About-info">
+        <h1>Leonardo Rivero</h1>
+        <span>Desarrollador Frontend</span>
+      </div>
+    </div>
+  </div>
+  <Socialbar />
+  <nav>
+    <ul>
+      <li>
+        <a href="/certificados">Certificados</a>
+      </li>
+      <li>
+        <a href="/habilidades">Habilidades</a>
+      </li>
+    </ul>
+  </nav>
+
+</header>

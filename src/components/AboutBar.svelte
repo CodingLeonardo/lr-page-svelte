@@ -2,8 +2,6 @@
   export let src;
   export let name;
   export let ocupation;
-  export let bio;
-  export let live;
 </script>
 
 <style>
@@ -11,17 +9,18 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2em 1em;
     text-align: center;
+    color: black;
+    background: #a5ff9b;
   }
   .AboutBar-perfile {
-    width: 80%;
+    width: 10%;
   }
   .AboutBar-perfile img {
     width: 100%;
     border-radius: 50%;
-    border: 0.2em solid var(--primary-300);
-    box-shadow: 0 0 0.5em black;
+    border: 0.2em solid var(--primary-100);
+    box-shadow: 0 0 1em black;
   }
   .AboutBar-info {
     margin-top: 1em;
@@ -30,16 +29,6 @@
     font-weight: lighter;
   }
   .AboutBar-info span {
-    font-weight: lighter;
-    font-size: 1.1em;
-  }
-  .AboutBar-bio {
-    margin: 1em 0;
-    color: #8a8a8a;
-    font-weight: lighter;
-  }
-  .AboutBar-live {
-    color: #646464;
     font-weight: lighter;
     font-size: 1.1em;
   }
@@ -52,11 +41,5 @@
   <div class="AboutBar-info">
     <h1>{name}</h1>
     <span>{ocupation}</span>
-  </div>
-  <div class="AboutBar-bio">
-    <p>{bio}</p>
-  </div>
-  <div class="AboutBar-live">
-    <p>{live}</p>
   </div>
 </div>

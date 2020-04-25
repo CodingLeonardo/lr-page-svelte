@@ -4,6 +4,9 @@
 yarn-error.log
 /cypress/screenshots/
 /__sapper__/
+<<<<<<< HEAD
 
 .svg
 .jpg
+=======
+>>>>>>> 49986bd46c08cf36478055f3124674f05214c163

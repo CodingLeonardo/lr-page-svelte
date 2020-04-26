@@ -29,9 +29,10 @@
     justify-content: center;
     align-items: center;
     height: 3em;
+    margin: 1em 0;
   }
   .Socialbar div {
-    width: 3%;
+    width: 10%;
     margin: 0 0.25em;
   }
   .Socialbar img {

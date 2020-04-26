@@ -1,26 +1,5 @@
 <script>
-  const links = [
-    {
-      name: "facebook",
-      src: "./assets/images/facebook.svg",
-      href: "https://www.facebook.com/CodingLeonardo"
-    },
-    {
-      name: "twitter",
-      src: "./assets/images/twitter.svg",
-      href: "https://twitter.com/CodingLeonardo"
-    },
-    {
-      name: "instagram",
-      src: "./assets/images/instagram.svg",
-      href: "https://www.instagram.com/codingleonardo/"
-    },
-    {
-      name: "github",
-      src: "./assets/images/github.svg",
-      href: "https://github.com/CodingLeonardo"
-    }
-  ];
+  export let links;
 </script>
 
 <style>

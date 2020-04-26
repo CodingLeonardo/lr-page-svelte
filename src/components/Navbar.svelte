@@ -1,124 +1,25 @@
 <script>
+  import About from "./About.svelte";
   import Socialbar from "./Socialbar.svelte";
+  import Nav from "./Nav.svelte";
 </script>
 
 <style>
   header {
-    /* background: #a5ff9b; */
     padding-top: 0.5em;
-  }
-  header > div {
-    text-align: center;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    border-bottom: 0.2em solid var(--primary-500);
-    font-weight: normal;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* clearfix */
-  ul::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
-  li {
-    display: block;
-    float: left;
-  }
-  a {
-    text-decoration: none;
-    color: #56a34d;
-    padding: 1em 0.5em;
-    display: block;
-    transition: 0.8s;
-    will-change: color;
-  }
-  a:hover {
-    color: #20421d;
-  }
-
-  .About {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: black;
-    padding: 1em 2em;
-  }
-  .About-perfile {
-    width: 50%;
-  }
-  .About-perfile img {
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 1em black;
-  }
-  .About-info {
-    margin-top: 0.5em;
-  }
-  .About a {
-    padding: 0;
-    color: #20421d;
-  }
-  .About-info h1 {
-    font-weight: lighter;
-  }
-  .About-info span {
-    font-weight: lighter;
-    font-size: 1.1em;
-  }
-  @media screen and (min-width: 320px) {
-    .About-info h1 {
-      font-size: 1.8em;
-    }
-    .About-info {
-      margin-top: 0.8em;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .About-info h1 {
-      font-size: 2.5em;
-    }
-    .About-info {
-      margin-top: 0.8em;
-    }
   }
 </style>
 
 <header>
   <div class="container">
-    <div>
-      <div class="About">
-        <figure class="About-perfile">
-          <a href="/">
-            <img src="./assets/images/Leonardito.jpg" alt="Leonardo Rivero" />
-
-          </a>
-        </figure>
-        <div class="About-info">
-          <h1>Leonardo Rivero</h1>
-          <span>Desarrollador Frontend</span>
-        </div>
-      </div>
-    </div>
-    <Socialbar />
-    <nav>
-      <ul>
-        <li>
-          <a href="/certificados">Certificados</a>
-        </li>
-        <li>
-          <a href="/habilidades">Habilidades</a>
-        </li>
-      </ul>
-    </nav>
+    <About
+      name="Leonardo Rivero"
+      ocupation="Desarrollador Frontend"
+      srcImg="./assets/images/Leonardito.jpg"
+      href="/" />
+    <Socialbar
+      links={[{ name: 'facebook', src: './assets/images/facebook.svg', href: 'https://www.facebook.com/CodingLeonardo' }, { name: 'twitter', src: './assets/images/twitter.svg', href: 'https://twitter.com/CodingLeonardo' }, { name: 'instagram', src: './assets/images/instagram.svg', href: 'https://www.instagram.com/codingleonardo/' }, { name: 'github', src: './assets/images/github.svg', href: 'https://github.com/CodingLeonardo' }]} />
+    <Nav
+      links={[{ name: 'Certificados', href: '/certificados' }, { name: 'Habilidades', href: '/habilidades' }]} />
   </div>
 </header>

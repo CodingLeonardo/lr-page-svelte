@@ -1,6 +1,5 @@
 <script>
   import Socialbar from "./Socialbar.svelte";
-  export let segment;
 </script>
 
 <style>
@@ -53,7 +52,6 @@
     text-align: center;
     color: black;
     padding: 1em 2em;
-    /* background: #a5ff9b; */
   }
   .About-perfile {
     width: 50%;
@@ -77,34 +75,50 @@
     font-weight: lighter;
     font-size: 1.1em;
   }
+  @media screen and (min-width: 320px) {
+    .About-info h1 {
+      font-size: 1.8em;
+    }
+    .About-info {
+      margin-top: 0.8em;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .About-info h1 {
+      font-size: 2.5em;
+    }
+    .About-info {
+      margin-top: 0.8em;
+    }
+  }
 </style>
 
 <header>
+  <div class="container">
+    <div>
+      <div class="About">
+        <figure class="About-perfile">
+          <a href="/">
+            <img src="./assets/images/Leonardito.jpg" alt="Leonardo Rivero" />
 
-  <div>
-    <div class="About">
-      <figure class="About-perfile">
-        <a href="/">
-          <img src="./assets/images/Leonardito.jpg" alt="Leonardo Rivero" />
-
-        </a>
-      </figure>
-      <div class="About-info">
-        <h1>Leonardo Rivero</h1>
-        <span>Desarrollador Frontend</span>
+          </a>
+        </figure>
+        <div class="About-info">
+          <h1>Leonardo Rivero</h1>
+          <span>Desarrollador Frontend</span>
+        </div>
       </div>
     </div>
+    <Socialbar />
+    <nav>
+      <ul>
+        <li>
+          <a href="/certificados">Certificados</a>
+        </li>
+        <li>
+          <a href="/habilidades">Habilidades</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <Socialbar />
-  <nav>
-    <ul>
-      <li>
-        <a href="/certificados">Certificados</a>
-      </li>
-      <li>
-        <a href="/habilidades">Habilidades</a>
-      </li>
-    </ul>
-  </nav>
-
 </header>

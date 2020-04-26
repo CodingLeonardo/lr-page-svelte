@@ -31,7 +31,7 @@
     height: 3em;
   }
   .Socialbar div {
-    width: 3%;
+    width: 10%;
     margin: 0 0.25em;
   }
   .Socialbar img {

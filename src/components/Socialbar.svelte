@@ -17,6 +17,31 @@
   .Socialbar img {
     width: 100%;
   }
+  @media screen and (min-width: 320px) {
+    .Socialbar div {
+      width: 15%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .Socialbar div {
+      width: 10%;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .Socialbar div {
+      width: 8%;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .Socialbar div {
+      width: 5%;
+    }
+  }
+  @media screen and (min-width: 2560px) {
+    .Socialbar div {
+      width: 2%;
+    }
+  }
 </style>
 
 <div class="Socialbar">

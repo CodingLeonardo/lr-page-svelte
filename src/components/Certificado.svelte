@@ -1,6 +1,8 @@
 <script>
   export let name;
   export let src;
+  import IntersectionObserver from "./IntersectionObserver.svelte";
+  import Loader from "./Loader.svelte";
 </script>
 
 <style>
@@ -19,6 +21,12 @@
   }
 </style>
 
-<div class="Certificado">
-  <img {src} alt={name} />
-</div>
+<IntersectionObserver let:intersecting once={true} bottom={100}>
+  {#if intersecting}
+    <div class="Certificado">
+      <img {src} alt={name} />
+    </div>
+  {:else}
+    <Loader style="width: 100%, height: 100%" />
+  {/if}
+</IntersectionObserver>

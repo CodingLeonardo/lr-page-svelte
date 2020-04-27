@@ -45,6 +45,20 @@
     }
   }
   @media screen and (min-width: 768px) {
+    .About-perfile {
+      width: 30%;
+    }
+    .About-info h1 {
+      font-size: 2.5em;
+    }
+    .About-info {
+      margin-top: 0.8em;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .About-perfile {
+      width: 20%;
+    }
     .About-info h1 {
       font-size: 2.5em;
     }

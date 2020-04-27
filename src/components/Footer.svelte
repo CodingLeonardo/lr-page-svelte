@@ -18,7 +18,7 @@
   }
   footer a {
     text-decoration: underline;
-    color: #31522d;
+    color: #20361e;
   }
   img {
     height: 2em;

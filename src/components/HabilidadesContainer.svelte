@@ -1,7 +1,7 @@
 <script>
   export let title;
   export let habilidades;
-  import Habilidades from "./Habilidades.svelte";
+  import Habilidad from "./Habilidad.svelte";
 </script>
 
 <style>
@@ -10,43 +10,44 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    box-shadow: 0 0 10px 0 black;
-    background: white;
+    background: #81d878;
     border-radius: 2em;
     padding: 1em;
     text-align: center;
-    margin: 1em 0;
+  }
+  .HabilidadesContainer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .HabilidadesContainer h1 {
-    margin-bottom: 0.5em;
+    margin: 0.5em 0;
   }
 
   @media screen and (min-width: 320px) {
-    .HabilidadesContainer {
-      padding: 1em;
-    }
-    .HabilidadesContainer h1 {
-      font-size: 1.5em;
-      margin-bottom: 0.2em;
+    .HabilidadesContainer-container {
+      flex-direction: column;
     }
   }
-  @media screen and (min-width: 425px) {
+  @media screen and (min-width: 1024px) {
     .HabilidadesContainer h1 {
-      font-size: 1.3em;
-      margin-bottom: 0.2em;
+      font-size: 2.3em;
     }
-  }
-  @media screen and (min-width: 768px) {
-    .HabilidadesContainer h1 {
-      font-size: 1.8em;
-      margin-bottom: 0.2em;
+    .HabilidadesContainer-container {
+      flex-direction: row;
     }
   }
 </style>
 
 <div class="HabilidadesContainer">
   <h1>{title}</h1>
-  {#each habilidades as habilidad}
-    <Habilidades name={habilidad.name} src={habilidad.src} />
-  {/each}
+  <div class="HabilidadesContainer-container">
+    {#each habilidades as habilidad}
+      <Habilidad
+        name={habilidad.name}
+        src={habilidad.src}
+        background={habilidad.background} />
+    {/each}
+  </div>
 </div>

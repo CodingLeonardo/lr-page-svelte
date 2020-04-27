@@ -18,6 +18,53 @@
   .Habilidades img {
     width: 100%;
   }
+  .Habilidades h1 {
+    margin-top: 0.5em;
+  }
+  @media screen and (min-width: 320px) {
+    .Habilidades {
+      width: 60%;
+    }
+    .Habilidades img {
+      width: 70%;
+    }
+    .Habilidades h1 {
+      font-size: 1.5em;
+    }
+  }
+  @media screen and (min-width: 425px) {
+    .Habilidades {
+      width: 80%;
+    }
+    .Habilidades img {
+      width: 80%;
+    }
+    .Habilidades h1 {
+      font-size: 1.3em;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .Habilidades {
+      width: 50%;
+    }
+    .Habilidades img {
+      width: 80%;
+    }
+    .Habilidades h1 {
+      font-size: 1.4em;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .Habilidades {
+      width: 50%;
+    }
+    .Habilidades img {
+      width: 80%;
+    }
+    .Habilidades h1 {
+      font-size: 1.4em;
+    }
+  }
 </style>
 
 <div class="Habilidades">

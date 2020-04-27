@@ -28,10 +28,23 @@
 
 <style>
   .Habilidades {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1.5em;
+  }
+  @media screen and (min-width: 320px) {
+    .Habilidades {
+      grid-template-columns: 1fr;
+      grid-template-rows: initial;
+    }
+  }
+  @media screen and (min-width: 425px) {
+    .Habilidades {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
 </style>
 
@@ -40,9 +53,7 @@
 </svelte:head>
 
 <div class="Habilidades">
-  <HabilidadesContainer
-    title="Lenguajes de Programacion"
-    habilidades={lenguages} />
+  <HabilidadesContainer title="Lenguajes" habilidades={lenguages} />
   <HabilidadesContainer
     title="Frameworks y Librerias"
     habilidades={frameworks} />

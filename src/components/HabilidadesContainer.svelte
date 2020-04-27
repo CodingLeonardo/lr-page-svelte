@@ -20,6 +20,28 @@
   .HabilidadesContainer h1 {
     margin-bottom: 0.5em;
   }
+
+  @media screen and (min-width: 320px) {
+    .HabilidadesContainer {
+      padding: 1em;
+    }
+    .HabilidadesContainer h1 {
+      font-size: 1.5em;
+      margin-bottom: 0.2em;
+    }
+  }
+  @media screen and (min-width: 425px) {
+    .HabilidadesContainer h1 {
+      font-size: 1.3em;
+      margin-bottom: 0.2em;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .HabilidadesContainer h1 {
+      font-size: 1.8em;
+      margin-bottom: 0.2em;
+    }
+  }
 </style>
 
 <div class="HabilidadesContainer">
